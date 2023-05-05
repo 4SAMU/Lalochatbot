@@ -1,0 +1,37 @@
+{
+  "name": "lalochatbot_js",
+  "version": "1.0.6",
+  "description": "lalochatbot with Ai responses",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel Modal --out-dir lib --extensions .ts,.tsx"
+  },
+  "keywords": [
+    "TS",
+    "Js",
+    "Modal",
+    "Bot",
+    "Diani",
+    "Ai"
+  ],
+  "author": "SA MU",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+  },
+  "dependencies": {
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.11.1"
+  }
+}
