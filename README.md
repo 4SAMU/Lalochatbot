@@ -1,11 +1,11 @@
 # Lalochatbot
 
 ```shell
-npm install lalochatbot
+npm install lalochatbot_js
 ```
 
 ```shell
-yarn add lalochatbot
+yarn add lalochatbot_js
 ```
 
 ## usage
@@ -20,7 +20,7 @@ in the the page u want to show the chatplugin
 import { useState } from "react";
 import "./App.css";
 import { SiLivechat } from "react-icons/si";
-import ChatApp from "lalochatbot";
+import ChatApp from "lalochatbot_js";
 
 function App() {
   const [showEntry, setShowEntry] = useState(false);
@@ -57,3 +57,20 @@ export default App;
   cursor: pointer;
 }
 ```
+
+### Issues & Fixing
+
+if You experience an issue like this:
+
+```js
+Could not find a declaration file for module 'lalochatbot_js'. '...../node_modules/lalochatbot_js/lib/index.js' implicitly has an 'any' type.
+Try `npm i --save-dev @types/lalochatbot_js` if it exists or add a new declaration (.d.ts) file containing `declare module 'lalochatbot_js';`
+```
+
+simply create a declaration file for the module in the root of your project named **`lalochatbot_js.d.ts`** and add this line:
+
+```js
+declare module 'lalochatbot_js';
+```
+
+hurray! is solved 🥳🥳🥳
